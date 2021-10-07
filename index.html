@@ -10,6 +10,7 @@
         <a-assets>
             <img id="hirst-skull" crossOrigin='Anonymous' src="damien-hirst-skull-min.png">
             <img id="hirst-pills" crossOrigin='Anonymous' src="damien-hirst-pills-min.png">
+            <img id="wood-texture" src="textures/hardwood2_diffuse.jpg">
         </a-assets>
         <!--
             https://www.artsy.net/artwork/damien-hirst-h5-6-plaza
@@ -18,10 +19,14 @@
 
 
         <!-- Floor -->
-        <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#858585"></a-plane>
+        <!-- color="#858585" -->
+        <!--
+        <a-plane src="#wood-texture" position="0 0 0" rotation="-90 0 0" width="10" height="10" ></a-plane>
+        -->
+        <a-entity geometry="primitive: plane" rotation="-90 0 0" height="10" width="10" material="src: #wood-texture"></a-entity>
 
         <!-- Ceiling -->
-        <a-plane position="0 4 0" rotation="90 0 0" width="10" height="10" color="#858585"></a-plane>
+        <a-plane position="0 4 0" rotation="90 0 0" width="10" height="10" color="#bfbfbf"></a-plane>
 
         <!-- Rug -->
         <a-plane position="0 0.001 0" rotation="-90 0 0" width="3" height="9" color="#a62d24"></a-plane>
@@ -78,9 +83,15 @@
         <a-plane position="5 2 0" rotation="0 -90 0" width="10" height="4" color="#c7af6b"></a-plane>
         <a-plane position="0 2 5" rotation="0 -180 0" width="10" height="4" color="#c7af6b"></a-plane>
 
-        <!-- Other Paitings -->
-        <a-image src="#hirst-pills" position="4.997 1.6 0" rotation="0 90 0"></a-image>
-        <a-image src="#hirst-skull" position="-4.997 1.6 0" rotation="0 -90 0"></a-image>
+        <!-- Pill Painting -->
+        <a-image src="#hirst-pills" height="1.7" width="1.5" position="4.997 1.6 0" rotation="0 -90 0"></a-image>
+        <a-text value="Black Brilliant Utopia" color="#000000" rotation="0 -90 0" position="4.999 3.5 -4.75" align="left" width="10"></a-text>
+        <a-text value="by Damien Hirst (2013)" color="#000000" rotation="0 -90 0" position="4.999 3 -4.75" align="left"></a-text>
+
+        <!-- Skull Painting -->
+        <a-image src="#hirst-skull" height="2" width="1.5" position="-4.997 1.6 0" rotation="0 90 0"></a-image>
+        <a-text value="Romance in the Age of Uncertainty" color="#000000" rotation="0 90 0" position="-4.999 3.5 4.75" align="left" width="10"></a-text>
+        <a-text value="by Damien Hirst (2003)" color="#000000" rotation="0 90 0" position="-4.999 3 4.75" align="left"></a-text>
     
         <!-- Picture Frame -->
         <a-plane position="0.77 1.6 -4.997" width="0.2" height="1.5" color="#f1eff0"></a-plane>
