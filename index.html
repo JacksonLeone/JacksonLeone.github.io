@@ -7,13 +7,10 @@
 
 <body>
     <a-scene>
-        <assets>
-            <!--
-            <a-image id="skyboxImage" src="img/colorful-water-color-painting.jpg">
-            -->
-            <a-image id="hirst-skull" src="img/damien-hirst-skull.png">
-            <a-image id="hirst-pills" src="img/damien-hirst-pills.png">
-        </assets>
+        <a-assets>
+            <img id="hirst-skull" crossOrigin='Anonymous' src="damien-hirst-skull-min.png">
+            <img id="hirst-pills" crossOrigin='Anonymous' src="damien-hirst-pills-min.png">
+        </a-assets>
         <!--
             https://www.artsy.net/artwork/damien-hirst-h5-6-plaza
 
@@ -77,6 +74,12 @@
         <a-plane position="-5 2 0" rotation="0 90 0"width="10" height="4" color="#c7af6b"></a-plane>
         <a-plane position="5 2 0" rotation="0 -90 0" width="10" height="4" color="#c7af6b"></a-plane>
         <a-plane position="0 2 5" rotation="0 -180 0" width="10" height="4" color="#c7af6b"></a-plane>
+
+        <!-- Other Paitings -->
+        <a-image src="#hirst-pills" position="4.997 1.6 0" rotation="0 90 0"></a-image>
+        <a-image src="#hirst-skull" position="-4.997 1.6 0" rotation="0 -90 0"></a-image>
+        
+        
 
         <!-- Ceiling -->
         <a-plane position="0 4 0" rotation="90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
