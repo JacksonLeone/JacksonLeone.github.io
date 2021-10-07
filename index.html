@@ -8,7 +8,11 @@
 <body>
     <a-scene>
         <assets>
-            <img skyboxImage src="colorful-water-color-painting.jpg">
+            <!--
+            <a-image id="skyboxImage" src="img/colorful-water-color-painting.jpg">
+            -->
+            <a-image id="hirst-skull" src="img/damien-hirst-skull.png">
+            <a-image id="hirst-pills" src="img/damien-hirst-pills.png">
         </assets>
         <!--
             https://www.artsy.net/artwork/damien-hirst-h5-6-plaza
@@ -36,9 +40,18 @@
         <a-plane position="0 2.45 -4.999" width="1.74" height=".2" color="#f1eff0"></a-plane>
         <a-plane position="0 0.85 -4.999" width="1.74" height=".2" color="#f1eff0"></a-plane>
 
-        <a-plane position=".0425 0.925 -4.998" width="1.35" height="0.05" color="#aca9a9"></a-plane>
-        <a-plane position=".6925 1.6 -4.998" width="0.05" height="1.35" color="#aca9a9"></a-plane>
+        <a-plane position=".0425 0.925 -4.997" width="1.35" height="0.05" color="#aca9a9"></a-plane>
+        <a-plane position=".6925 1.6 -4.997" width="0.05" height="1.35" color="#aca9a9"></a-plane>
 
+
+        <a-text value="H5-6 Plaza" color="#000000" position="-4.75 3.5 -4.999" align="left" width="10"></a-text>
+        <a-text value="by Damien Hirst (2018)" color="#000000" position="-4.75 3 -4.999" align="left"></a-text>
+        <a-text value="Walk through painting." color="#000000" position="0 0 -7" rotation="-90 0 0" align="center"></a-text>
+        <a-text value="TotallyRealWall" color="#000000" position="0 3 4.999" rotation="0 180 0" align="center" width="4">
+        </a-text>
+        <a-text value="TM" color="#000000" position="-0.7 3.1 4.999" rotation="0 180 0" align="center" width="2"></a-text>
+
+        
 
         <a-sphere position='0.6846 3.23 -10.36' radius='0.1428' color='#019fb7'></a-sphere>
         <a-sphere position='1.3776 3.29 -10.82' radius='0.1483' color='#ec800c'></a-sphere>
@@ -124,8 +137,9 @@
         <a-sphere position="50 200 200" radius="20" color="#000000"></a-sphere>
         <a-sphere position="-50 200 200" radius="20" color="#000000"></a-sphere>
         <a-torus position="0 200 200" radius="20" width="30" color="#f1426e"></a-torus>
+        
         <a-text position="0 90 200" rotation="0 -180 0" width = "600" value="Good morning!" align="center" color="#000000"></a-text>
-       
+        
 
         
         <a-sky color="#f0efe7"></a-sky>
